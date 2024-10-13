@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    height: 100vh;
+    background-color: white;
+    background-image: url('backgorund/background2.gif');
+    background-size: cover;
+    background-position: center;
+}
+
+#signin {
+    max-width: 350px;
+    position: fixed;
+    top: 0; /* Atas layar */
+    left: 3px; /* Kiri layar */
+    bottom: 0; /* Bawah layar */
+    height: 100%; /* Tinggi 100% dari tinggi layar */
+    display: block;
+    background-color: #ffffff1d;
+    box-shadow: 0 0 5px #005555;
+    text-align: center;
+}
+
+#signin h3{
+	text-align:center;
+	color:#005555;
+	font-size:24px;
+	padding-top:6px;
+	margin-top: 30px;
+}
+
+#signin p{
+	margin-top: 10px;
+}
+
+#signin a{
+	margin-top: 100px;
+}
+
+fieldset{
+	margin:10px;
+	border:none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+select,
+textarea{
+	width:90%;
+	padding:0.8em;
+	margin-top:1em;
+	border:1px solid #005555;
+	background-color:#FFFFFF;
+	font-family:Cambria;
+	font-size:14px;
+	color:#005555;
+	text-align:center;
+	border-radius:5px;
+}
+
+input[type="submit"]{
+	width:auto;
+	margin-top:1em;
+	color:#FFFFFF;
+	background-color:#005555;
+	padding:0.8em;
+	cursor:pointer;
+	border:1px solid #005555;
+	font-family:Cambria;
+	border-radius:5px;
+}
+
+
+/* Tampilan untuk ponsel */
+@media only screen and (max-width: 1200px) {
+    #signin {
+        max-width: none; /* Menghapus batasan maksimum lebar */
+        width: 100%; /* Lebar penuh */
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        display: block;
+        background-color: #ffffff1d;
+        box-shadow: 0 0 5px #005555;
+        text-align: center;
+    }
+}
